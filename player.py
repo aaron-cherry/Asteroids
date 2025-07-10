@@ -3,6 +3,11 @@ import circleshape
 import constants
 
 class Player(circleshape.CircleShape):
+    updateable = pygame.sprite.Group()
+    drawable = pygame.sprite.Group()
+
+    containers = (updateable, drawable)
+
     def __init__(self, x, y):
         super().__init__(x, y, constants.PLAYER_RADIUS)
         self.rotation = 0
