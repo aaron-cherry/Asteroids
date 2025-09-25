@@ -7,3 +7,4 @@ start virtual env
     source .venv/bin/activate
     uv run main.py
 
+![game demo](asteroid_demo.gif)
